@@ -1,0 +1,7 @@
+interface:
+  display_name: "Protect Offline Python Webapp"
+  short_description: "Audit, compile, and verify offline Python+JS web deliveries"
+  default_prompt: "Use $protect-offline-python-webapp to audit this Python and JS web app and propose an offline protection and build plan."
+
+policy:
+  allow_implicit_invocation: true

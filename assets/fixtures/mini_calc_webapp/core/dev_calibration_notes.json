@@ -1,0 +1,5 @@
+{
+  "internal_note": "SYNTHETIC_DEV_CALIBRATION_TABLE_DO_NOT_SHIP",
+  "derivation_notes": "Bench reference factors kept in source tree for unit derivation only; runtime constants are compiled inside core.spectrum_core.",
+  "reference_polynomial": [1.0025, -0.00042, 0.000015]
+}

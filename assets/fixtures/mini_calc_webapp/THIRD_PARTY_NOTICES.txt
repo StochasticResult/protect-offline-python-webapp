@@ -1,0 +1,5 @@
+Mini Calc Webapp Fixture - Open Source & Runtime Notices
+========================================================
+This synthetic test fixture uses Python standard library modules for HTTP serving
+and optionally PyCA cryptography (Apache-2.0 / BSD-3-Clause) when testing opt-in
+offline Ed25519 license verification. Contains zero real business or customer data.

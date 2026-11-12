@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "project_name": "mini-calc-webapp",
+  "route": "nuitka-module",
+  "entrypoint": "app_server.py",
+  "protected_modules": [
+    {
+      "module": "core.spectrum_core",
+      "source": "core/spectrum_core.py",
+      "package_dir": "core"
+    }
+  ],
+  "runtime_files": [
+    "app_server.py",
+    "core/__init__.py",
+    "vendor_runtime/__init__.py",
+    "vendor_runtime/unit_labels.py",
+    "web/index.html",
+    "web/app.js",
+    "web/styles.css",
+    "THIRD_PARTY_NOTICES.txt"
+  ],
+  "sensitive_assets_forbidden_in_artifact": [
+    "core/dev_calibration_notes.json"
+  ],
+  "allowed_py_globs": [
+    "app_server.py",
+    "core/__init__.py",
+    "vendor_runtime/*.py"
+  ],
+  "allowed_network_hosts": [
+    "127.0.0.1",
+    "localhost",
+    "::1"
+  ],
+  "numerical_tolerance": {
+    "abs_tol": 1e-9,
+    "rel_tol": 1e-9
+  }
+}

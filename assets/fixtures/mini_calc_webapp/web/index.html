@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Calc Offline Harmonic Analyzer</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Mini Calc Offline Harmonic Analyzer</h1>
+      <p id="runtime-badge" class="badge">Checking local service...</p>
+    </header>
+
+    <section class="panel">
+      <label for="samples-input">Waveform Samples (comma-separated):</label>
+      <input id="samples-input" type="text" value="0.0, 1.0, 0.0, -1.0, 0.0, 1.0, 0.0, -1.0" />
+
+      <div class="row">
+        <div>
+          <label for="rate-input">Sample Rate (Hz):</label>
+          <input id="rate-input" type="number" value="800" min="1" step="1" />
+        </div>
+        <div>
+          <label for="mode-select">Calibration Mode:</label>
+          <select id="mode-select">
+            <option value="standard">Standard</option>
+            <option value="precision">Precision</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="analyze-btn" type="button">Analyze Waveform</button>
+        <button id="export-btn" type="button">Run Batch Import/Export</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Result</h2>
+      <pre id="result-output">Ready.</pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
